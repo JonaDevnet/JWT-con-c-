@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Joni\\source\\repos\\AWJWT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\services\\jwtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,8 +15,12 @@
       "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 73,
-          "SelectedChildIndex": 10,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,15 +66,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\appsettings.json",
               "RelativeDocumentMoniker": "AWJWT\\appsettings.json",
               "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\appsettings.json",
               "RelativeToolTip": "AWJWT\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAACAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-20T15:06:39.944Z",
+              "WhenOpened": "2024-11-23T22:32:41.601Z",
               "EditorCaption": ""
             },
             {
@@ -81,23 +85,33 @@
               "RelativeDocumentMoniker": "AWJWT\\Controllers\\VehiculosController.cs",
               "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\VehiculosController.cs",
               "RelativeToolTip": "AWJWT\\Controllers\\VehiculosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T14:38:46.152Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T14:00:29.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "JwtService.cs",
-              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Services\\JwtService.cs",
-              "RelativeDocumentMoniker": "AWJWT\\Services\\JwtService.cs",
-              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Services\\JwtService.cs",
-              "RelativeToolTip": "AWJWT\\Services\\JwtService.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAMwE0AAAAOAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "LoginDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\LoginDTO.cs",
+              "RelativeDocumentMoniker": "AWJWT\\DTOs\\LoginDTO.cs",
+              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\LoginDTO.cs",
+              "RelativeToolTip": "AWJWT\\DTOs\\LoginDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T18:16:12.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-21T13:15:04.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "AWJWT\\DTOs\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\UsuarioDTO.cs",
+              "RelativeToolTip": "AWJWT\\DTOs\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-21T13:15:03.918Z"
             },
             {
               "$type": "Document",
@@ -107,7 +121,7 @@
               "RelativeDocumentMoniker": "AWJWT\\Controllers\\AuthController.cs",
               "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\AuthController.cs",
               "RelativeToolTip": "AWJWT\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAAwIoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAGQAAAAAAAAAAAAcwE0AAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-15T14:47:30.446Z",
               "EditorCaption": ""

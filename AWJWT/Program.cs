@@ -1,3 +1,13 @@
+//// formas de cors
+////builder.Services.AddCors(options =>
+////{
+////    options.AddPolicy("NewPolicy", app =>
+////    {
+////        app.AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+////    });
+////});
+//builder.Services.AddCors(policyBuilder => policyBuilder.AddDefaultPolicy(policy => policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod()));
+
 using AWJWT.Customs;
 using AWJWT.Models;
 using AWJWT.Services;
@@ -9,22 +19,25 @@ using System.Text;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+// Configuración de la conexión a la base de datos
 builder.Services.AddDbContext<BdjwtContext>(options =>
 {
     options.UseSqlServer(builder.Configuration.GetConnectionString("CadenaSQL"));
 });
 
+// Servicios personalizados
 builder.Services.AddSingleton<Utilities>();
 builder.Services.AddScoped<JwtService>();
 
-builder.Services.AddAuthentication(config => {
+// Configuración de autenticación JWT
+builder.Services.AddAuthentication(config =>
+{
     config.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
     config.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
 }).AddJwtBearer(config =>
@@ -43,11 +56,15 @@ builder.Services.AddAuthentication(config => {
     };
 });
 
+// Configuración de CORS
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("NewPolicy", app =>
+    options.AddPolicy("AllowFrontendLocalhost", policy =>
     {
-        app.AllowAnyHeader().AllowAnyMethod().AllowCredentials();
+        policy.WithOrigins("http://localhost:3000") // Permite solicitudes desde el cliente React
+              .AllowAnyHeader()
+              .AllowAnyMethod()
+              .AllowCredentials(); // Permite cookies y credenciales
     });
 });
 
@@ -59,11 +76,14 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-app.UseCors("NewPolicy");
+
+// Aplica la política de CORS antes de la autenticación
+app.UseCors("AllowFrontendLocalhost");
 
 app.UseRouting();
-app.MapControllers();
 app.UseAuthentication();
 app.UseAuthorization();
-app.Run();
 
+app.MapControllers();
+
+app.Run();

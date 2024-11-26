@@ -28,12 +28,12 @@ namespace AWJWT.Controllers
 
         [HttpPost]
         [Route("Registrarse")]
-        public async Task<IActionResult> Registrarse(UsuarioDTO objecto)
+        public async Task<IActionResult> Registrarse([FromBody] UsuarioDTO objecto)
         {
-            //if (objecto == null || string.IsNullOrEmpty(objecto.Nombre) || string.IsNullOrEmpty(objecto.Clave))
-            //{
-            //    return StatusCode(StatusCodes.Status200OK, new { isSuccess = false, message = "Datos inválidos" });
-            //}
+            if (objecto == null || string.IsNullOrEmpty(objecto.Nombre) || string.IsNullOrEmpty(objecto.Clave))
+            {
+                return StatusCode(StatusCodes.Status200OK, new { isSuccess = false, message = "Datos inválidos" });
+            }
 
             var modeloUsuario = new Usuario
             {
@@ -56,49 +56,47 @@ namespace AWJWT.Controllers
 
         [HttpPost]
         [Route("Login")]
-        public async Task<IActionResult> Login(LoginDTO objeto)
+        public async Task<IActionResult> Login([FromBody] LoginDTO objeto)
         {
             var usuarioEncontrado = await _DbContext.Usuarios.Where(
-                                   u => 
-                                   u.Correo == objeto.Correo &&
-                                   u.Clave == _Utilities.encriptarSHA256(objeto.Clave))
-                                    .FirstOrDefaultAsync();
+                u =>
+                u.Correo == objeto.Correo &&
+                u.Clave == _Utilities.encriptarSHA256(objeto.Clave))
+                .FirstOrDefaultAsync();
+
             if (usuarioEncontrado == null)
                 return Unauthorized(new { isSucces = false, messege = "Credenciales incorrectas" });
 
-            //generamos el token
+            // Generar los tokens
             var accessToken = _Services.GeneratorAccessToken(usuarioEncontrado);
             var refreshToken = _Services.GeneratorRefheshToken(usuarioEncontrado.IdUsuario, usuarioEncontrado.Correo!, usuarioEncontrado.Nombres!);
 
-            //Establecemos la cookie HttpOnly con el refresh token
-
+            // Configurar la cookie HttpOnly con el refresh token
             Response.Cookies.Append("refreshToken", refreshToken, new CookieOptions
             {
-                HttpOnly = true,
-                Secure = HttpContext.Request.IsHttps,
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7)
+                HttpOnly = true, 
+                Secure = HttpContext.Request.IsHttps, // Solo en HTTPS 
+                SameSite = SameSiteMode.Strict, // Evita CSRF
+                Expires = DateTime.UtcNow.AddDays(7) // expiración
             });
 
-            return Ok(new { isSucces = true, accessToken, refreshToken });
+            return Ok(new { isSucces = true, accessToken });
         }
+
 
         [HttpPost]
         [Route("refresh-token")]
         public IActionResult RefreshToken()
         {
-            // Obtener el Refresh Token de las cookies
             var refreshToken = Request.Cookies["refreshToken"];
-
             if (string.IsNullOrEmpty(refreshToken))
                 return Unauthorized(new { message = "Refresh token faltante" });
 
-            // Validar el Refresh Token
             var principal = _Services.ValidateToken(refreshToken);
             if (principal == null)
                 return Unauthorized(new { message = "Refresh token inválido" });
 
-            // Verificar que el token no haya expirado
+            // Verificar expiración del token
             var expClaim = principal.Claims.FirstOrDefault(c => c.Type == JwtRegisteredClaimNames.Exp);
             if (expClaim != null && long.TryParse(expClaim.Value, out long expTimestamp))
             {
@@ -106,12 +104,7 @@ namespace AWJWT.Controllers
                 if (expirationDate <= DateTime.UtcNow)
                     return Unauthorized(new { message = "Refresh token expirado" });
             }
-            else
-            {
-                return Unauthorized(new { message = "Refresh token inválido 2" });
-            }
 
-            // Extraer datos del usuario desde los claims
             var userId = principal.FindFirst(ClaimTypes.NameIdentifier)?.Value;
             var email = principal.FindFirst(ClaimTypes.Email)?.Value;
             var name = principal.FindFirst(ClaimTypes.Name)?.Value;
@@ -127,18 +120,9 @@ namespace AWJWT.Controllers
                 Nombres = name
             });
 
-            // Generar un nuevo Refresh Token y actualizar la cookie
-            var newRefreshToken = _Services.GeneratorRefheshToken(int.Parse(userId), email, name); // Asegúrate de pasar estos valores
-            Response.Cookies.Append("refreshToken", newRefreshToken, new CookieOptions
-            {
-                HttpOnly = true,
-                Secure = false, // Cambiar esto a `true` cuando esté en producción (si usas HTTPS)
-                SameSite = SameSiteMode.Strict,
-                Expires = DateTime.UtcNow.AddDays(7) // Configura el tiempo de expiración según sea necesario
-            });
-
             return Ok(new { accessToken = newAccessToken });
         }
+
 
     }
 }

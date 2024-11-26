@@ -289,3 +289,4 @@ C:\Users\Jonat\source\repos\AWJWT\AWJWT\AWJWT\obj\Debug\net8.0\refint\AWJWT.dll
 C:\Users\Jonat\source\repos\AWJWT\AWJWT\AWJWT\obj\Debug\net8.0\AWJWT.pdb
 C:\Users\Jonat\source\repos\AWJWT\AWJWT\AWJWT\obj\Debug\net8.0\AWJWT.genruntimeconfig.cache
 C:\Users\Jonat\source\repos\AWJWT\AWJWT\AWJWT\obj\Debug\net8.0\ref\AWJWT.dll
+C:\Users\Joni\source\repos\AWJWT\AWJWT\obj\Debug\net8.0\AWJWT.sourcelink.json
