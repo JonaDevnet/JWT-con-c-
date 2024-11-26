@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Joni\\source\\repos\\AWJWT\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\models\\vehiculo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\opvehiculo\\vehiculosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\opvehiculo\\vehiculosdao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\controllers\\vehiculoscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\dtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|c:\\users\\joni\\source\\repos\\awjwt\\awjwt\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{74DB5F90-B762-491F-84BD-B5F3B61E623D}|AWJWT\\AWJWT.csproj|solutionrelative:awjwt\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,31 +67,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\appsettings.json",
-              "RelativeDocumentMoniker": "AWJWT\\appsettings.json",
-              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\appsettings.json",
-              "RelativeToolTip": "AWJWT\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-23T22:32:41.601Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "VehiculosController.cs",
               "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\VehiculosController.cs",
               "RelativeDocumentMoniker": "AWJWT\\Controllers\\VehiculosController.cs",
               "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\VehiculosController.cs",
               "RelativeToolTip": "AWJWT\\Controllers\\VehiculosController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T14:00:29.91Z"
+              "WhenOpened": "2024-11-26T18:09:15.713Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "Vehiculo.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Models\\Vehiculo.cs",
+              "RelativeDocumentMoniker": "AWJWT\\Models\\Vehiculo.cs",
+              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Models\\Vehiculo.cs",
+              "RelativeToolTip": "AWJWT\\Models\\Vehiculo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T18:03:24.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\LoginDTO.cs",
               "RelativeDocumentMoniker": "AWJWT\\DTOs\\LoginDTO.cs",
@@ -99,38 +100,27 @@
               "RelativeToolTip": "AWJWT\\DTOs\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T13:15:04.567Z"
+              "WhenOpened": "2024-11-26T17:54:56.796Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "AWJWT\\DTOs\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\DTOs\\UsuarioDTO.cs",
-              "RelativeToolTip": "AWJWT\\DTOs\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "VehiculosDAO.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\OpVehiculo\\VehiculosDAO.cs",
+              "RelativeDocumentMoniker": "AWJWT\\OpVehiculo\\VehiculosDAO.cs",
+              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\OpVehiculo\\VehiculosDAO.cs",
+              "RelativeToolTip": "AWJWT\\OpVehiculo\\VehiculosDAO.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAkwEIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-21T13:15:03.918Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AuthController.cs",
-              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\AuthController.cs",
-              "RelativeDocumentMoniker": "AWJWT\\Controllers\\AuthController.cs",
-              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\AuthController.cs",
-              "RelativeToolTip": "AWJWT\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAGQAAAAAAAAAAAAcwE0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-15T14:47:30.446Z",
+              "WhenOpened": "2024-11-26T17:47:52.162Z",
               "EditorCaption": ""
             }
           ]
         },
         {
           "DockedWidth": 73,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -175,11 +165,24 @@
             {
               "$type": "Bookmark",
               "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "AWJWT\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\Joni\\source\\repos\\AWJWT\\AWJWT\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "AWJWT\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-26T18:14:59.878Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 67,
+          "DockedWidth": 73,
           "SelectedChildIndex": -1,
           "Children": [
             {

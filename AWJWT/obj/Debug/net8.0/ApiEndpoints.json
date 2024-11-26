@@ -43,12 +43,60 @@
   },
   {
     "ContainingType": "AWJWT.Controllers.VehiculosController",
+    "Method": "EditarVehiculo",
+    "RelativePath": "api/Vehiculos/EditarVehiculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculo",
+        "Type": "AWJWT.Models.Vehiculo",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AWJWT.Controllers.VehiculosController",
+    "Method": "EliminarVehiculo",
+    "RelativePath": "api/Vehiculos/EliminarVehiculo",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AWJWT.Controllers.VehiculosController",
     "Method": "Lista",
     "RelativePath": "api/Vehiculos/Lista",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AWJWT.Controllers.VehiculosController",
+    "Method": "NuevoVehiculo",
+    "RelativePath": "api/Vehiculos/NuevoVehiculo",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "vehiculo",
+        "Type": "AWJWT.DTOs.VehiculosDTO",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

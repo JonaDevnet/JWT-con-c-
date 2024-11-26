@@ -8,8 +8,8 @@
 ////});
 //builder.Services.AddCors(policyBuilder => policyBuilder.AddDefaultPolicy(policy => policy.WithOrigins("*").AllowAnyHeader().AllowAnyMethod()));
 
+using AWJWT.Context;
 using AWJWT.Customs;
-using AWJWT.Models;
 using AWJWT.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
